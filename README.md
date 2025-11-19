@@ -85,6 +85,8 @@ emulator.custom_main_trace(
 
 ## 示例工作流
 
+也可以参考[看雪文章](https://bbs.kanxue.com/thread-289135.htm)
+
 1. **动态执行、内存转储、保存现场**：
 
 使用插件或者脚本运行到结束位置
