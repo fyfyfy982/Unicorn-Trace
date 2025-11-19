@@ -43,7 +43,7 @@ Unicorn ARM64 Emulator
             'enable_group': idaapi.Form.ChkGroupControl(("enable_tenet",)),
         })
         
-        self.end_addr = 0x1e4988
+        self.end_addr = 0x0000
         self.so_name = ""
         self.tpidr_value = None
         self.enable_tenet = False
@@ -222,7 +222,7 @@ class IDAArm64Emulator(Arm64Emulator):
             self.hooks.append(self.mu.hook_add(UC_HOOK_CODE, self.debug_hook_code, begin=start_addr))
 
             # 开始模拟
-            self.mu.emu_start(start_addr, self.BASE + end_addr)
+            self.mu.emu_start(start_addr, end_addr)
 
         except UcError as e:
             return self._handle_uc_error(e)
