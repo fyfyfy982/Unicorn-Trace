@@ -62,7 +62,7 @@ pip install unicorn capstone
 
 已安装插件可以直接使用 `dyn_trace_ida.py` 脚本，如未安装也可以使用上面单脚本 `dynamic_dump.py`
 
-直接在 mian 函数里填写所需参数，内容同上
+直接在 main 函数里填写所需参数，内容同上
 
 
 ### 功能二：独立模拟器使用
